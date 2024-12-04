@@ -33,6 +33,7 @@ def index(request):
 class CookersListView(LoginRequiredMixin, generic.ListView):
     model = Cook
     template_name = "restaurant/cookers_list.html"
+    paginate_by = 5
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(CookersListView, self).get_context_data(**kwargs)
@@ -81,7 +82,7 @@ class CookersDeleteView(LoginRequiredMixin, generic.DeleteView):
 class DishListView(LoginRequiredMixin, generic.ListView):
     model = Dish
     template_name = "restaurant/dish_list.html"
-    # paginate_by = 5
+    paginate_by = 5
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(DishListView, self).get_context_data(**kwargs)
@@ -125,7 +126,7 @@ class DishDeleteView(LoginRequiredMixin, generic.DeleteView):
 class DishTypeListView(LoginRequiredMixin, generic.ListView):
     model = DishType
     template_name = "restaurant/dish_type_list.html"
-    # paginate_by = 5
+    paginate_by = 5
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(DishTypeListView, self).get_context_data(**kwargs)
@@ -150,7 +151,6 @@ class DishTypeCreateView(LoginRequiredMixin, generic.CreateView):
     fields = ["name", ]
     success_url = reverse_lazy("restaurant:dish-type-list")
     template_name = "restaurant/dish_form.html"
-    # form_class = DriverCreationForm
 
 
 class DishTypeUpdateView(LoginRequiredMixin, generic.UpdateView):

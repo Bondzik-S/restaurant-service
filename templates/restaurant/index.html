@@ -1,0 +1,65 @@
+{#{% extends "base.html" %}#}
+{##}
+{#{% block content %}#}
+{#    <h1>Restaurant Service Home</h1>#}
+{#    <p>Welcome to Best Restaurant Ever!</p>#}
+{#    <h2>Dynamic content</h2>#}
+{#    <p>The Restaurant service has the following record counts:</p>#}
+{#    <ul>#}
+{#        <li><strong>Cooks:</strong> {{ num_cooks }}</li>#}
+{#        <li><strong>Dish types:</strong> {{ num_dish_types }}</li>#}
+{#        <li><strong>Dishes:</strong> {{ num_dishes }}</li>#}
+{#    </ul>#}
+{##}
+{#    <p>You have visited this page#}
+{#        {{ num_visits }} time{{ num_visits|pluralize }}.#}
+{#    </p>#}
+{##}
+{#{% endblock %}#}
+
+
+
+
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock title %}
+
+{% block content %}
+
+<div class="header pb-6 d-flex align-items-center" 
+     style="min-height: 500px; background-size: cover; background-image: url(/static/assets/img/brand/background-image-cook-service.jpeg); background-position: center top;">
+  <span class="mask bg-gradient-default opacity-8"></span>
+  <div class="container-fluid d-flex align-items-center">
+    <div class="row">
+      <div class="col-lg-7 col-md-10">
+        <h1 class="display-2 text-white">Welcome to Best Restaurant Ever!</h1>
+        <p class="text-white mt-0 mb-5">Explore the best dishes, talented cooks, and wonderful service all in one place.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mt--6">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="mb-0">Dynamic Content</h2>
+        </div>
+        <div class="card-body">
+          <p>The Restaurant service has the following record counts:</p>
+          <ul>
+            <li><strong>Cooks:</strong> {{ num_cooks }}</li>
+            <li><strong>Dish types:</strong> {{ num_dish_types }}</li>
+            <li><strong>Dishes:</strong> {{ num_dishes }}</li>
+          </ul>
+          <p>You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include "includes/footer-fullscreen.html" %}
+</div>
+
+{% endblock content %}

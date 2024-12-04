@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
+  <div class="container" style="margin-top: 20px">
   <h1>Delete cook {{ cook.first_name }} {{ cook.last_name }}({{ cook.username }})?</h1>
   <form action="" method="post">
     {% csrf_token %}
 
     <input type="submit" value="Yes" class="btn btn-danger">
   </form>
+  </div>
 {% endblock %}
