@@ -1,0 +1,308 @@
+[
+  {
+    "model": "accounts.cook",
+    "pk": 1,
+    "fields": {
+      "username": "james_baker",
+      "email": "james.baker@example.com",
+      "password": "password1",
+      "first_name": "James",
+      "last_name": "Baker",
+      "years_of_experience": 12
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 2,
+    "fields": {
+      "username": "emma_carter",
+      "email": "emma.carter@example.com",
+      "password": "password2",
+      "first_name": "Emma",
+      "last_name": "Carter",
+      "years_of_experience": 8
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 3,
+    "fields": {
+      "username": "michael_doe",
+      "email": "michael.doe@example.com",
+      "password": "password3",
+      "first_name": "Michael",
+      "last_name": "Doe",
+      "years_of_experience": 15
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 4,
+    "fields": {
+      "username": "sophia_lee",
+      "email": "sophia.lee@example.com",
+      "password": "password4",
+      "first_name": "Sophia",
+      "last_name": "Lee",
+      "years_of_experience": 7
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 5,
+    "fields": {
+      "username": "liam_harris",
+      "email": "liam.harris@example.com",
+      "password": "password5",
+      "first_name": "Liam",
+      "last_name": "Harris",
+      "years_of_experience": 5
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 6,
+    "fields": {
+      "username": "ava_martin",
+      "email": "ava.martin@example.com",
+      "password": "password6",
+      "first_name": "Ava",
+      "last_name": "Martin",
+      "years_of_experience": 10
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 7,
+    "fields": {
+      "username": "william_jones",
+      "email": "william.jones@example.com",
+      "password": "password7",
+      "first_name": "William",
+      "last_name": "Jones",
+      "years_of_experience": 6
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 8,
+    "fields": {
+      "username": "mia_white",
+      "email": "mia.white@example.com",
+      "password": "password8",
+      "first_name": "Mia",
+      "last_name": "White",
+      "years_of_experience": 3
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 9,
+    "fields": {
+      "username": "elijah_green",
+      "email": "elijah.green@example.com",
+      "password": "password9",
+      "first_name": "Elijah",
+      "last_name": "Green",
+      "years_of_experience": 9
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 10,
+    "fields": {
+      "username": "isabella_clark",
+      "email": "isabella.clark@example.com",
+      "password": "password10",
+      "first_name": "Isabella",
+      "last_name": "Clark",
+      "years_of_experience": 4
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 11,
+    "fields": {
+      "username": "noah_hill",
+      "email": "noah.hill@example.com",
+      "password": "password11",
+      "first_name": "Noah",
+      "last_name": "Hill",
+      "years_of_experience": 8
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 12,
+    "fields": {
+      "username": "amelia_wright",
+      "email": "amelia.wright@example.com",
+      "password": "password12",
+      "first_name": "Amelia",
+      "last_name": "Wright",
+      "years_of_experience": 11
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 13,
+    "fields": {
+      "username": "lucas_moore",
+      "email": "lucas.moore@example.com",
+      "password": "password13",
+      "first_name": "Lucas",
+      "last_name": "Moore",
+      "years_of_experience": 2
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 14,
+    "fields": {
+      "username": "ella_cole",
+      "email": "ella.cole@example.com",
+      "password": "password14",
+      "first_name": "Ella",
+      "last_name": "Cole",
+      "years_of_experience": 9
+    }
+  },
+  {
+    "model": "accounts.cook",
+    "pk": 15,
+    "fields": {
+      "username": "jack_miller",
+      "email": "jack.miller@example.com",
+      "password": "password15",
+      "first_name": "Jack",
+      "last_name": "Miller",
+      "years_of_experience": 14
+    }
+  },
+  {
+    "model": "restaurant.dishtype",
+    "pk": 1,
+    "fields": {
+      "name": "Soups"
+    }
+  },
+  {
+    "model": "restaurant.dishtype",
+    "pk": 2,
+    "fields": {
+      "name": "Salads"
+    }
+  },
+  {
+    "model": "restaurant.dishtype",
+    "pk": 3,
+    "fields": {
+      "name": "Main Courses"
+    }
+  },
+  {
+    "model": "restaurant.dishtype",
+    "pk": 4,
+    "fields": {
+      "name": "Side Dishes"
+    }
+  },
+  {
+    "model": "restaurant.dishtype",
+    "pk": 5,
+    "fields": {
+      "name": "Desserts"
+    }
+  },
+  {
+    "model": "restaurant.dishtype",
+    "pk": 6,
+    "fields": {
+      "name": "Drinks"
+    }
+  },
+  {
+    "model": "restaurant.dishtype",
+    "pk": 7,
+    "fields": {
+      "name": "Breakfast"
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 1,
+    "fields": {
+      "name": "Pumpkin Soup",
+      "description": "Creamy pumpkin soup with a touch of cinnamon.",
+      "price": "6.99",
+      "dish_type": 1,
+      "cooks": [1, 2, 3]
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 2,
+    "fields": {
+      "name": "Greek Salad",
+      "description": "Classic salad with feta cheese and olives.",
+      "price": "7.50",
+      "dish_type": 2,
+      "cooks": [4, 5, 6]
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 3,
+    "fields": {
+      "name": "Beef Wellington",
+      "description": "Juicy beef wrapped in puff pastry.",
+      "price": "25.00",
+      "dish_type": 3,
+      "cooks": [1, 10, 13]
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 4,
+    "fields": {
+      "name": "Mashed Potatoes",
+      "description": "Creamy mashed potatoes with butter.",
+      "price": "5.00",
+      "dish_type": 4,
+      "cooks": [2, 8, 11]
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 5,
+    "fields": {
+      "name": "Cheesecake",
+      "description": "Rich and smooth cheesecake.",
+      "price": "8.00",
+      "dish_type": 5,
+      "cooks": [3, 6, 12]
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 6,
+    "fields": {
+      "name": "Orange Juice",
+      "description": "Freshly squeezed orange juice.",
+      "price": "3.50",
+      "dish_type": 6,
+      "cooks": [7, 14, 15]
+    }
+  },
+  {
+    "model": "restaurant.dish",
+    "pk": 7,
+    "fields": {
+      "name": "Pancakes",
+      "description": "Fluffy pancakes with maple syrup.",
+      "price": "10.00",
+      "dish_type": 7,
+      "cooks": [5, 9, 12]
+    }
+  }
+]
