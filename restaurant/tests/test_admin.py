@@ -33,33 +33,33 @@ class AdminSiteTest(TestCase):
         self.dish.cooks.add(self.cook)
 
     def test_dish_type_list_display(self):
-        url = reverse("admin:restaurant_dishtype_changelist")  # Замінили "app" на "restaurant"
+        url = reverse("admin:restaurant_dishtype_changelist")
         res = self.client.get(url)
         self.assertContains(res, self.dish_type.name)
 
     def test_dish_type_search(self):
-        url = reverse("admin:restaurant_dishtype_changelist")  # Замінили "app" на "restaurant"
+        url = reverse("admin:restaurant_dishtype_changelist")
         res = self.client.get(url + "?q=Main")
         self.assertContains(res, self.dish_type.name)
 
     def test_dish_list_display(self):
-        url = reverse("admin:restaurant_dish_changelist")  # Замінили "app" на "restaurant"
+        url = reverse("admin:restaurant_dish_changelist")
         res = self.client.get(url)
         self.assertContains(res, self.dish.name)
         self.assertContains(res, self.dish.price)
         self.assertContains(res, self.dish.dish_type.name)
 
     def test_dish_list_filter_by_dish_type(self):
-        url = reverse("admin:restaurant_dish_changelist")  # Замінили "app" на "restaurant"
+        url = reverse("admin:restaurant_dish_changelist")
         res = self.client.get(url + "?dish_type__id=" + str(self.dish.dish_type.id))
         self.assertContains(res, self.dish.name)
 
     def test_dish_search_by_name(self):
-        url = reverse("admin:restaurant_dish_changelist")  # Замінили "app" на "restaurant"
+        url = reverse("admin:restaurant_dish_changelist")
         res = self.client.get(url + "?q=Dish 1")
         self.assertContains(res, self.dish.name)
 
     def test_dish_search_by_dish_type(self):
-        url = reverse("admin:restaurant_dish_changelist")  # Замінили "app" на "restaurant"
+        url = reverse("admin:restaurant_dish_changelist")
         res = self.client.get(url + "?q=Main Course")
         self.assertContains(res, self.dish.name)

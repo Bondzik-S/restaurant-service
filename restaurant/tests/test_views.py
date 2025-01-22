@@ -54,7 +54,7 @@ class PrivateChefTests(TestCase):
             "last_name": "Li",
             "years_of_experience": 8
         }
-        self.client.post(reverse("restaurant:cookers-create"), data=form_data)
+        self.client.post(reverse("restaurant:cooks-create"), data=form_data)
         new_user = get_user_model().objects.get(username=form_data["username"])
 
         self.assertEqual(new_user.first_name, form_data["first_name"])

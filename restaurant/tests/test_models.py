@@ -2,7 +2,6 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase
 
 from restaurant.models import Dish, DishType
-from accounts.models import Cook
 
 
 class ModelTests(TestCase):

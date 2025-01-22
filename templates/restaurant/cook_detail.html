@@ -4,10 +4,10 @@
   <div class="container" style="margin-top: 20px">
     <h1>
       Username: {{ cook.username }}
-      <a href="{% url 'restaurant:cookers-delete' pk=cook.id %}" class="btn btn-danger link-to-page">
+      <a href="{% url 'restaurant:cooks-delete' pk=cook.id %}" class="btn btn-danger link-to-page">
         Delete
       </a>
-      <a href="{% url 'restaurant:cookers-update' pk=cook.id %}" class="btn btn-primary link-to-page">
+      <a href="{% url 'restaurant:cooks-update' pk=cook.id %}" class="btn btn-primary link-to-page">
         Update cook
       </a>
     </h1>

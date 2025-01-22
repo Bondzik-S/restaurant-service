@@ -16,28 +16,28 @@ Including another URLconf
 """
 from django.urls import path
 
-from restaurant.views import index, CookersListView, CookersCreateView, CookersUpdateView, CookerDetailView, \
-    CookersDeleteView, DishListView, DishDetailView, DishCreateView, DishUpdateView, DishDeleteView, \
+from restaurant.views import IndexView, CooksListView, CooksCreateView, CooksUpdateView, CookDetailView, \
+    CooksDeleteView, DishListView, DishDetailView, DishCreateView, DishUpdateView, DishDeleteView, \
     assign_cook_to_dish, DishTypeListView, DishTypeCreateView, DishTypeUpdateView, \
     DishTypeDeleteView
 
 urlpatterns = [
-    path("", index, name="index"),
-    path("cookers/", CookersListView.as_view(), name="cookers-list"),
-    path("cookers/<int:pk>/", CookerDetailView.as_view(), name="cookers-detail"),
-    path("cookers/create/", CookersCreateView.as_view(), name="cookers-create"),
-    path("cookers/<int:pk>/update/", CookersUpdateView.as_view(), name="cookers-update"),
-    path("cookers/<int:pk>/delete/", CookersDeleteView.as_view(), name="cookers-delete"),
-    path("dish/", DishListView.as_view(), name="dish-list"),
-    path("dish/<int:pk>/", DishDetailView.as_view(), name="dish-detail"),
+    path("", IndexView.as_view(), name="index"),
+    path("cooks/", CooksListView.as_view(), name="cooks-list"),
+    path("cooks/<int:pk>/", CookDetailView.as_view(), name="cooks-detail"),
+    path("cooks/create/", CooksCreateView.as_view(), name="cooks-create"),
+    path("cooks/<int:pk>/update/", CooksUpdateView.as_view(), name="cooks-update"),
+    path("cooks/<int:pk>/delete/", CooksDeleteView.as_view(), name="cooks-delete"),
+    path("dishes/", DishListView.as_view(), name="dishes-list"),
+    path("dishes/<int:pk>/", DishDetailView.as_view(), name="dish-detail"),
     path(
-        "dish/<int:pk>/toggle-assign/",
+        "dishes/<int:pk>/toggle-assign/",
         assign_cook_to_dish,
         name="toggle-car-assign",
     ),
-    path("dish/create/", DishCreateView.as_view(), name="dish-create"),
-    path("dish/<int:pk>/update/", DishUpdateView.as_view(), name="dish-update"),
-    path("dish/<int:pk>/delete/", DishDeleteView.as_view(), name="dish-delete"),
+    path("dishes/create/", DishCreateView.as_view(), name="dish-create"),
+    path("dishes/<int:pk>/update/", DishUpdateView.as_view(), name="dish-update"),
+    path("dishes/<int:pk>/delete/", DishDeleteView.as_view(), name="dish-delete"),
     path("dish-type/", DishTypeListView.as_view(), name="dish-type-list"),
     path("dish-type/create/", DishTypeCreateView.as_view(), name="dish-type-create"),
     path("dish-type/<int:pk>/update/", DishTypeUpdateView.as_view(), name="dish-type-update"),

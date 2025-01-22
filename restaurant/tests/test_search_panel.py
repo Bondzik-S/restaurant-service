@@ -67,14 +67,14 @@ class DishListViewTests(TestCase):
         )
 
     def test_search_dish_by_model(self):
-        response = self.client.get(reverse("restaurant:dish-list"),
+        response = self.client.get(reverse("restaurant:dishes-list"),
                                    {"name": "BBQ wings"})
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "BBQ wings")
         self.assertNotContains(response, "Pork steak")
 
     def test_empty_search_returns_all(self):
-        response = self.client.get(reverse("restaurant:dish-list"),
+        response = self.client.get(reverse("restaurant:dishes-list"),
                                    {"name": ""})
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "BBQ wings")
@@ -104,7 +104,7 @@ class CookListViewTests(TestCase):
         )
 
     def test_search_cook_by_username(self):
-        response = self.client.get(reverse("restaurant:cookers-list"),
+        response = self.client.get(reverse("restaurant:cooks-list"),
                                    {"username": "fin.zevs"})
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "fin.zevs")

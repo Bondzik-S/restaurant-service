@@ -6,8 +6,8 @@ from django.urls import reverse
 class Cook(AbstractUser):
     years_of_experience = models.IntegerField(null=True, blank=True, default=0)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.username
 
-    def get_absolute_url(self):
-        return reverse("restaurant:cookers-detail", kwargs={"pk": self.pk})
+    def get_absolute_url(self) -> str:
+        return reverse("restaurant:cooks-detail", kwargs={"pk": self.pk})
