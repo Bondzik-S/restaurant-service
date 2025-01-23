@@ -21,10 +21,8 @@ class AdminSiteTest(TestCase):
             years_of_experience=10
         )
 
-        # Створюємо DishType
         self.dish_type = DishType.objects.create(name="Main Course")
 
-        # Створюємо Dish
         self.dish = Dish.objects.create(
             name="Dish 1",
             price=100.0,

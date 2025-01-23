@@ -2,13 +2,11 @@ from django.test import TestCase
 from django.contrib.auth import get_user_model
 
 from restaurant.forms import (
-    CookUpdateForm,
     DishForm,
     CookSearchForm,
     DishSearchForm,
     DishTypeSearchForm,
 )
-from accounts.models import Cook
 from restaurant.models import DishType
 
 
