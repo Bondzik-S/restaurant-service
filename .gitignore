@@ -1,2 +1,58 @@
-.venv
-.idea
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Django migration files
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+*.tar.gz
+*.bak
+*.swp
+
+# Environment files
+.env
+.env.*
+*.env
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Coverage reports
+.coverage
+*.cover
+
+# Static files
+/static/
+*.static/
+
+# Media files
+/media/
+
+# Django database files
+db.sqlite3
+
+# Django settings
+settings.py
+*.pem
+*.key
+
+# Django caches
+*.cache
+
+# PyCharm project files
+.idea/
+
+# VSCode project files
+.vscode/
+
+# MacOS Finder specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db

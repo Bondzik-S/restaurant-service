@@ -1,0 +1,460 @@
+[
+{
+    "model": "accounts.cook",
+    "pk": 1,
+    "fields": {
+        "password": "password1",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "james_baker",
+        "first_name": "James",
+        "last_name": "Baker",
+        "email": "james.baker@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.080Z",
+        "years_of_experience": 12,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 2,
+    "fields": {
+        "password": "password2",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "emma_carter",
+        "first_name": "Emma",
+        "last_name": "Carter",
+        "email": "emma.carter@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.086Z",
+        "years_of_experience": 8,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 3,
+    "fields": {
+        "password": "password3",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "michael_doe",
+        "first_name": "Michael",
+        "last_name": "Doe",
+        "email": "michael.doe@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.086Z",
+        "years_of_experience": 15,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 4,
+    "fields": {
+        "password": "password4",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "sophia_lee",
+        "first_name": "Sophia",
+        "last_name": "Lee",
+        "email": "sophia.lee@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.087Z",
+        "years_of_experience": 7,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 5,
+    "fields": {
+        "password": "password5",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "liam_harris",
+        "first_name": "Liam",
+        "last_name": "Harris",
+        "email": "liam.harris@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.087Z",
+        "years_of_experience": 5,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 6,
+    "fields": {
+        "password": "password6",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ava_martin",
+        "first_name": "Ava",
+        "last_name": "Martin",
+        "email": "ava.martin@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.087Z",
+        "years_of_experience": 10,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 7,
+    "fields": {
+        "password": "password7",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "william_jones",
+        "first_name": "William",
+        "last_name": "Jones",
+        "email": "william.jones@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.088Z",
+        "years_of_experience": 6,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 8,
+    "fields": {
+        "password": "password8",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "mia_white",
+        "first_name": "Mia",
+        "last_name": "White",
+        "email": "mia.white@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.089Z",
+        "years_of_experience": 3,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 9,
+    "fields": {
+        "password": "password9",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "elijah_green",
+        "first_name": "Elijah",
+        "last_name": "Green",
+        "email": "elijah.green@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.089Z",
+        "years_of_experience": 9,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 10,
+    "fields": {
+        "password": "password10",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "isabella_clark",
+        "first_name": "Isabella",
+        "last_name": "Clark",
+        "email": "isabella.clark@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.090Z",
+        "years_of_experience": 4,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 11,
+    "fields": {
+        "password": "password11",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "noah_hill",
+        "first_name": "Noah",
+        "last_name": "Hill",
+        "email": "noah.hill@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.091Z",
+        "years_of_experience": 8,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 12,
+    "fields": {
+        "password": "password12",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "amelia_wright",
+        "first_name": "Amelia",
+        "last_name": "Wright",
+        "email": "amelia.wright@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.092Z",
+        "years_of_experience": 11,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 13,
+    "fields": {
+        "password": "password13",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "lucas_moore",
+        "first_name": "Lucas",
+        "last_name": "Moore",
+        "email": "lucas.moore@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.092Z",
+        "years_of_experience": 2,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 14,
+    "fields": {
+        "password": "password14",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ella_cole",
+        "first_name": "Ella",
+        "last_name": "Cole",
+        "email": "ella.cole@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.093Z",
+        "years_of_experience": 9,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 15,
+    "fields": {
+        "password": "password15",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jack_miller",
+        "first_name": "Jack",
+        "last_name": "Miller",
+        "email": "jack.miller@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:08.094Z",
+        "years_of_experience": 14,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.cook",
+    "pk": 16,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$rXbWxKcusrj1gnJbjI8QMK$c4pw+4in3rMfh+EGzrwMrKO37dzMdzJaJd4FgHkVmw0=",
+        "last_login": "2024-12-05T14:44:48.850Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@admin.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-12-03T12:36:35.876Z",
+        "years_of_experience": 0,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "restaurant.dishtype",
+    "pk": 1,
+    "fields": {
+        "name": "Soups"
+    }
+},
+{
+    "model": "restaurant.dishtype",
+    "pk": 2,
+    "fields": {
+        "name": "Salads"
+    }
+},
+{
+    "model": "restaurant.dishtype",
+    "pk": 3,
+    "fields": {
+        "name": "Main Courses"
+    }
+},
+{
+    "model": "restaurant.dishtype",
+    "pk": 4,
+    "fields": {
+        "name": "Side Dishes"
+    }
+},
+{
+    "model": "restaurant.dishtype",
+    "pk": 5,
+    "fields": {
+        "name": "Desserts"
+    }
+},
+{
+    "model": "restaurant.dishtype",
+    "pk": 6,
+    "fields": {
+        "name": "Drinks"
+    }
+},
+{
+    "model": "restaurant.dishtype",
+    "pk": 7,
+    "fields": {
+        "name": "Breakfast"
+    }
+},
+{
+    "model": "restaurant.dish",
+    "pk": 1,
+    "fields": {
+        "name": "Pumpkin Soup",
+        "description": "Creamy pumpkin soup with a touch of cinnamon.",
+        "price": "6.99",
+        "dish_type": 1,
+        "cooks": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "restaurant.dish",
+    "pk": 2,
+    "fields": {
+        "name": "Greek Salad",
+        "description": "Classic salad with feta cheese and olives.",
+        "price": "7.50",
+        "dish_type": 2,
+        "cooks": [
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "restaurant.dish",
+    "pk": 3,
+    "fields": {
+        "name": "Beef Wellington",
+        "description": "Juicy beef wrapped in puff pastry.",
+        "price": "25.00",
+        "dish_type": 3,
+        "cooks": [
+            1,
+            10,
+            13
+        ]
+    }
+},
+{
+    "model": "restaurant.dish",
+    "pk": 4,
+    "fields": {
+        "name": "Mashed Potatoes",
+        "description": "Creamy mashed potatoes with butter.",
+        "price": "5.00",
+        "dish_type": 4,
+        "cooks": [
+            2,
+            8,
+            11
+        ]
+    }
+},
+{
+    "model": "restaurant.dish",
+    "pk": 5,
+    "fields": {
+        "name": "Cheesecake",
+        "description": "Rich and smooth cheesecake.",
+        "price": "8.00",
+        "dish_type": 5,
+        "cooks": [
+            3,
+            6,
+            12
+        ]
+    }
+},
+{
+    "model": "restaurant.dish",
+    "pk": 6,
+    "fields": {
+        "name": "Orange Juice",
+        "description": "Freshly squeezed orange juice.",
+        "price": "3.50",
+        "dish_type": 6,
+        "cooks": [
+            7,
+            14,
+            15
+        ]
+    }
+},
+{
+    "model": "restaurant.dish",
+    "pk": 7,
+    "fields": {
+        "name": "Pancakes",
+        "description": "Fluffy pancakes with maple syrup.",
+        "price": "10.00",
+        "dish_type": 7,
+        "cooks": [
+            5,
+            9,
+            12
+        ]
+    }
+}
+]

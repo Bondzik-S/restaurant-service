@@ -1,0 +1,45 @@
+<nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+  <div class="scrollbar-inner">
+    <!-- Brand -->
+    <div class="sidenav-header  align-items-center">
+      <a class="navbar-brand" href="/">
+        <img src="/static/assets/img/brand/blue.png" class="navbar-brand-img" alt="Argon Design - Jinja Template Logo.">
+      </a>
+    </div>
+    <div class="navbar-inner">
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <!-- Nav items -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link {% if 'index' in segment %} active {% endif %}" href="{% url 'restaurant:index' %}">
+              <i class="ni ni-tv-2 text-primary"></i>
+              <span class="nav-link-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if 'profile' in segment %} active {% endif %}"
+               href="{% url 'restaurant:cooks-list' %}">
+              <i class="ni ni-single-02 text-yellow"></i>
+
+              <span class="nav-link-text">All cooks</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if 'map' in segment %} active {% endif %}" href="{% url 'restaurant:dishes-list' %}">
+              <i class="ni ni-pin-3 text-primary"></i>
+              <span class="nav-link-text">All dishes</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if 'icons' in segment %} active {% endif %}"
+               href="{% url 'restaurant:dish-types-list' %}">
+              <i class="ni ni-planet text-orange"></i>
+              <span class="nav-link-text">All dish types</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

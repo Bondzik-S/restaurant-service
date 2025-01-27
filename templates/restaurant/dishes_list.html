@@ -1,0 +1,124 @@
+{#{% extends "base.html" %}#}
+{#{% load crispy_forms_filters %}#}
+{##}
+{#{% block content %}#}
+{#  <h1 style="margin-top: 20px">#}
+{#    Dish List#}
+{#    <a href="{% url 'restaurant:dish-create' %}" class="btn btn-primary link-to-page">#}
+{#      Create#}
+{#    </a>#}
+{#  </h1>#}
+{##}
+{#  <form method="get" action="" class="form-inline">#}
+{#    {{ search_form|crispy }}#}
+{#    <input type="submit" class="btn" style="border: 1px solid gray;" value="🔍">#}
+{#  </form>#}
+{##}
+{#  {% if dish_list %}#}
+{#    <table class="table">#}
+{#      <thead>#}
+{#      <tr>#}
+{#        <th>ID</th>#}
+{#        <th>Name</th>#}
+{#        <th>Price</th>#}
+{#        <th>Dish type</th>#}
+{#        <th>Update</th>#}
+{#        <th>Delete</th>#}
+{#      </tr>#}
+{#      </thead>#}
+{#      <tbody>#}
+{#      {% for dish in dish_list %}#}
+{#        <tr>#}
+{#          <td>{{ dish.id }}</td>#}
+{#          <td>#}
+{#            <a href="{% url 'restaurant:dish-detail' pk=dish.id %}">#}
+{#              {{ dish.name }}#}
+{#            </a>#}
+{#          </td>#}
+{#          <td>{{ dish.price }}$</td>#}
+{#          <td>{{ dish.dish_type.name }}</td>#}
+{#          <td>#}
+{#            <a href="{% url 'restaurant:dish-update' pk=dish.id %}">#}
+{#              Update#}
+{#            </a>#}
+{#          </td>#}
+{#          <td>#}
+{#            <a style="color: red"#}
+{#               href="{% url 'restaurant:dish-delete' pk=dish.id %}">#}
+{#              Delete#}
+{#            </a>#}
+{#          </td>#}
+{#        </tr>#}
+{#      {% endfor %}#}
+{#      </tbody>#}
+{#    </table>#}
+{#  {% else %}#}
+{#    <p>There are no dishes in the service.</p>#}
+{#  {% endif %}#}
+{#{% endblock %}#}
+
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+  <div class="container" style="margin-top: 20px">
+    <h1 class="d-flex justify-content-between align-items-center">
+      Dish List
+      <a href="{% url 'restaurant:dish-create' %}" class="btn btn-primary">
+        Create
+      </a>
+    </h1>
+
+    <form method="get" action="" class="navbar-search navbar-search-light form-inline mr-sm-3">
+      <div class="form-group mb-0">
+        <div class="input-group input-group-alternative input-group-merge">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-search"></i></span>
+          </div>
+          {{ search_form|crispy }}
+        </div>
+      </div>
+    </form>
+
+    {% if dish_list %}
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Dish type</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for dish in dish_list %}
+            <tr>
+              <td>{{ dish.id }}</td>
+              <td>
+                <a href="{% url 'restaurant:dish-detail' pk=dish.id %}">
+                  {{ dish.name }}
+                </a>
+              </td>
+              <td>{{ dish.price }}$</td>
+              <td>{{ dish.dish_type.name }}</td>
+              <td>
+                <a href="{% url 'restaurant:dish-update' pk=dish.id %}" class="btn btn-warning btn-sm">
+                  Update
+                </a>
+              </td>
+              <td>
+                <a href="{% url 'restaurant:dish-delete' pk=dish.id %}" class="btn btn-danger btn-sm">
+                  Delete
+                </a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No dishes available in the service.</p>
+    {% endif %}
+  </div>
+{% endblock %}
