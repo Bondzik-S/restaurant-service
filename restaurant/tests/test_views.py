@@ -1,7 +1,9 @@
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 from django.test import TestCase
+
 from restaurant.models import DishType
+
 
 DISH_TYPE_URL = reverse("restaurant:dish-types-list")
 

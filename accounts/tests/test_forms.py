@@ -3,6 +3,7 @@ from django.test import TestCase
 
 from restaurant.forms import CookCreationForm, CookUpdateForm
 
+
 Cook = get_user_model()
 
 

@@ -35,6 +35,7 @@ from restaurant.views import (
     DishTypeDeleteView
 )
 
+
 urlpatterns = [
     path("", IndexView.as_view(), name="index"),
     path("cooks/", CooksListView.as_view(), name="cooks-list"),

@@ -1,6 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.test import TestCase, Client
 from django.urls import reverse
+
 from accounts.models import Cook
 from restaurant.models import DishType, Dish
 
@@ -14,7 +15,6 @@ class AdminSiteTest(TestCase):
         )
         self.client.force_login(self.admin_user)
 
-        # Створюємо Cook
         self.cook = Cook.objects.create_user(
             username="cook1",
             password="cook1234",

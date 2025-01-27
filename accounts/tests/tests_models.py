@@ -3,6 +3,7 @@ from django.contrib.auth import get_user_model
 
 from restaurant.forms import CookCreationForm
 
+
 Cook = get_user_model()
 
 class CookModelTest(TestCase):
